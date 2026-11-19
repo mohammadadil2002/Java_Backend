@@ -1,0 +1,32 @@
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetExample {
+
+	public static void  main(String args[]) {
+		
+		Set<String> cities = new HashSet<String>();
+		
+		cities.add("Hyderabad");
+		cities.add("Bangalore");
+		cities.add("Chennai");
+		cities.add("Mumbai");
+		cities.add("Delhi");
+		cities.add("Jaipur");
+		
+		System.out.println("Bangalore".hashCode());
+		
+		int hash = "Bangalore".hashCode();
+		hash = hash ^ (hash >>> 16);
+		int bucketIndex = (16 - 1) & hash;
+		System.out.println("Bangalore stored at " + bucketIndex);
+		
+		System.out.println(cities);
+		cities.add( "Maharastra");
+		
+		System.out.println(cities);
+		
+		
+    }
+}
