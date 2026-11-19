@@ -1,8 +1,6 @@
-package com.kodewalaarraylist;
-
 import java.util.LinkedList;
 
-public class Driver1 {
+public class LinkedListExample {
     
 	public static void main(String args[]) {
 		
