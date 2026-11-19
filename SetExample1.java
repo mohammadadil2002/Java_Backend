@@ -36,5 +36,6 @@ public class SetExample1 {
         hash = hash ^ (hash >>> 16);
         int bucketIndes = (16 - 1) & hash;
         System.out.println("emp1 stored at " + bucketIndes);
+        System.out.println("Size : " +employees.size());
     }
 }
